@@ -12,20 +12,22 @@
   <body>
     <header class="row">
       <div class="col-3">
-        <div class="circle">
-         <br />
-         You know
-         <br />
-         You need
-         <br />
-         To code
-        </div>
+        <%= link_to root_path 'logo' do %>
+          <div class="circle">
+            <br />
+            You know
+            <br />
+            You need
+            <br />
+            To code
+          </div>
+        <% end %>
       </div>
       <div class="col-4 slogan">
         Living stress free is the key to ME!
       </div>
       <div class="col-5 links">
-        <%= link_to 'Contribute', '#' %>
+        <%= link_to 'Contribute', new_quote_path %>
         <%= link_to 'About', '#' %>
       </div>
     </header>
@@ -42,7 +44,7 @@
       <div class="container">
         <div class="row">
           <div class="col-6">
-          <%= link_to "This isn't enough, I need more", "#", class: 'next-quote' %>
+          <%= link_to "This isn't enough, I need more", root_path, class: 'next-quote' %>
           </div>
           <div class="col-6 footer-blurb">
             Proudly built by <a href="[YOUR_PORTFOLIO_URL]">[David Wagner]</a><br />
