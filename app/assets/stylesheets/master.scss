@@ -99,3 +99,15 @@ h2 span {
 ::selection {
   background-color: #f84342;
 }
+
+.modal-header {
+  display: block!important;
+}
+
+.modal-title {
+  float: left;
+}
+
+.modal-header .close {
+  float: right;
+}
