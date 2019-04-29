@@ -42,7 +42,7 @@
       <div class="container">
         <div class="row">
           <div class="col-6">
-          This isn't enough, I need more
+          <%= link_to "This isn't enough, I need more", "#", class: 'next-quote' %>
           </div>
           <div class="col-6 footer-blurb">
             Proudly built by <a href="[YOUR_PORTFOLIO_URL]">[David Wagner]</a><br />
@@ -52,8 +52,6 @@
         </div>
       </div>
     </div>
-
-    <%= yield %>
 
   </body>
 </html>
